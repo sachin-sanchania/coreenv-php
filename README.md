@@ -1,4 +1,4 @@
-# CoreEnv PHP — Lightweight .env Loader for Core PHP 8+
+# CoreEnv PHP — Lightweight .env for Core PHP 8+
 
 **CoreEnv PHP** is a minimal, Laravel-style environment variable loader and manager for **Core PHP 8+** applications.
 It provides `.env` loading, environment merging (local overrides), typed accessors, and simple validation — all without framework dependencies.
@@ -14,7 +14,7 @@ It provides `.env` loading, environment merging (local overrides), typed accesso
 ## Quick Start
 
 ```bash
-composer require your-vendor/coreenv-php
+composer require sachin-sanchania/coreenv-php
 ```
 
 **Example**
