@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+// simple CLI to inspect env values via package (example)
+require __DIR__ . '/../vendor/autoload.php';
+use CoreEnv\Env;
+$key = $argv[1] ?? null;
+if (!$key) {
+    echo "Usage: debugctl KEY\n";
+    exit(1);
+}
+$env = Env::getInstance(__DIR__ . '/../');
+echo $env->get($key, '') . PHP_EOL;
